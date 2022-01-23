@@ -1,3 +1,3 @@
 <h1> Meu Portifólio </h1>
 
-[ Link Para acessar meu portifólio (https://jhonisrael.github.io/Portifolio/page)]
+<a href="https://jhonisrael.github.io/Portifolio/page" target="_blank">Clique aqui para acessar meu portifólio</a>
