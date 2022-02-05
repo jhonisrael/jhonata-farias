@@ -1,13 +1,85 @@
-body {
-background: rgb(189, 203, 216);
-max-width: 900px;
-margin: auto;
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+:root {
+    --color-text: #15202B;
+    --background-color: #ffffff;
+    --background-color2:#f2f2f2;
+}
+
+body {  
+ font-family: Arial, sans-serif;
+}
+
+#darkmodeToggle {
+    display: none;
+}
+
+main {
+    background-color: var(--background-color);    
+    color: var(--color-text);
+    width: 100%;
+    position: absolute;
+    transition: .5s ease-in-out background, .5s ease-in-out color;
+
+}
+
+#darkmodeToggle:checked + main {
+    --color-text: #ffffff;
+    --background-color: #15202B;
+    --background-color2:#8899A3;
+       
+    background-color: var(--background-color);    
+    color: var(--color-text);
+    transition: .5s ease-in-out background, .5s ease-in-out color;
+}
+
+#darkmodeToggle:checked + main .darkmodelabel:after {
+    content: ' On';
+}
+
+.darkmodelabel{
+    cursor: pointer;
+}
+
+.darkmodelabel:after {
+    content: ' Off';
+}
+
+.menu-principal a,
+.menu-principal a:hover,
+.menu-principal a:visited {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+.menu-principal > ul {
+    text-align: right;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.menu-principal > ul > li {
+    margin-left: 30px;
+    display: inline;
+}
+
+.menu-principal > ul > li a:hover {
+    color: darkmagenta;
+}
 
 #title, .subtitle, .post_title {
-color: rgba(0, 0, 0, 0.712);
-}
+color: var(--color-text)
+} 
 
 .post_title {
 font-size: 16px;
@@ -29,6 +101,8 @@ padding: 10px;
 border: 3px solid black;
 margin-bottom: 15px;
 border-radius: 5px;
+width: 50%;
+height: 50%;
 }
 
 .post_contant {
