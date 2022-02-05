@@ -116,10 +116,8 @@ text-align: justify;
 
 .post_image {
 margin-bottom: 15px;
-margin-inline: 300px;
+margin-inline: 120px;
 width: 200px;
 height: 250px;
-border-radius: 60%;
+border-radius: 15%;
 }
-
-
