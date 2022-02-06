@@ -45,16 +45,18 @@
 
 			<section>
 			<header> 
-			<h2 class="subtitle">Parte 1</h2>
+			<h2 class="subtitle">Primeira Parada.</h2>
 			</header> 
 		    <article class="post"> 
 			<header> 
-			<h3 class="post_title">Sobre</h3> 
+			<h3 class="post_title"></h3> 
 			<img src="./css/robo.jpg" class="post_image">
 			
 			</header>
 			<P class="post_contant">
-			   <h1>Meu Portifólio está em construção.</h1>
+			   <h1>Olá fique a vontade para conhecer um pouco mais de minha criatividade, Aceito sugestões e toda crítica contrutiva é bem vinda, Sigo por aqui Construindo Idéias.</h1>
+			   <hr size = 1 color= black width=100%>
+			   "E que aquilo que pode ser visto foi produzido a partir daquilo que não se vê."
 			</P>
 			</article>
 			</section>
@@ -65,34 +67,44 @@
 		<div class="left">
 			<H1>Sobre</H1>
 			<p>
-				Academico de análise e desenvolvimento de Sistemas em Belém-PA, <strong></strong> também tenh alguns cursos nas linguagens que mais gosto de trabalhar, como curso da linguagem PHP e suas tecnologias completo, JavaScript com HTML e CSS, Banco de dados MYSQL, Git e GitHub.
+				Academico de análise e desenvolvimento de Sistemas em Belém-PA, também tenho alguns cursos nas linguagens que mais gosto de trabalhar, como os cursos da linguagem PHP e suas tecnologias completo, JavaScript com HTML e CSS, Banco de dados MYSQL, Git e GitHub.
 			</p>
 		</div>
 		<div class="right">
-			<img class="redonda" src="img/lucasbrelaz_avatar.jpg" alt="Foto pessoa">
+			<img class="redonda" src="./css/robo2.jpg" alt="Foto pessoa">
 		</div>
 	</section>
 
 	   <section id="box3" class="servicos">
 		<div class="servico">
-			<h2>Sistemas Web</h2>
+			<h2>Clone da page login do instagram</h2>
 			<p>
-				
+			Static page feita com HTML, CSS e PHP
 			</p>
+			<img src="./css/print-insta.png">
+		</div>
+          <br>
+		<div class="servico">
+			<h2>Site divulgação de empregos TI (CRUD) </h2>
+			<p>
+			Um CRUD completo Utilizando PHP | JavaScript | Data Base MYSQL | HTML-CSS | Composer para dependencias
+			</p>
+			<img src="./css/vagas-ti.png">
 		</div>
 	   </section>
 
 	   <footer>
 		<section id="box4" class="contato">
-            <h2>Entre em contato</h2>
-		<ul class="contacts_list">
+            <h3>Entre em contato pelos canais:</h3>
+	<ul class="contacts_list">
 		<li>
 		<a href="https://www.instagram.com/jhonatafarias_/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
 		</li>
 		<li>
 		<a href="https://www.linkedin.com/in/jhonata-farias-888163165/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 		</li>
-		</ul>
+    </ul>
+		<?= date('d'.'/'.'m'. '/'. 'y'); ?>
 	</footer>
 	</main>
 </body>

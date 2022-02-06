@@ -6,7 +6,7 @@
 
 :root {
     --color-text: #15202B;
-    --background-color: #ffffff;
+    --background-color: hsl(240, 26%, 95%);
     --background-color2:#f2f2f2;
 }
 
@@ -102,7 +102,7 @@ border-radius: 50%;
 background: var(--background-color2);
 padding: 10px;
 border: 3px solid black;
-margin-bottom: 15px;
+margin-bottom: 20px;
 border-radius: 5px;
 width: 50%;
 height: 50%;
@@ -116,8 +116,80 @@ text-align: justify;
 
 .post_image {
 margin-bottom: 15px;
-margin-inline: 120px;
-width: 200px;
-height: 250px;
+margin-inline: 35px;
+width: 390px;
+height: 350px;
 border-radius: 15%;
+}
+
+.sobre {
+    display: table;
+    margin-inline: 20px;
+}
+
+.sobre > .left {
+    display: table-cell;
+    float: left;
+    width: 65%;
+}
+
+.sobre > .right {
+    text-align: right;
+    display: table-cell;
+    float: right;
+    width: 30%;
+}
+
+.sobre p {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.sobre img {
+    width: 250px;
+}
+
+img.redonda {
+    border-radius: 20%;
+}
+
+section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.servicos > .servico {
+    width: 460px;
+    display: inline-block;
+    background-color: var(--background-color);
+    margin-bottom: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    box-sizing: border-box;   
+}
+
+.servicos > .servico:nth-child(even) {
+    margin-right: 0;
+}
+
+.servico h2 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-text);
+    margin-bottom: 10px;
+}
+
+.servico p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.contato{ 
+grid-area: rodape;
+background-color: var(--background-color2);
+display: flex;
+justify-content: flex-end;
+align-items: center;
+font-size: 1.2rem;
+padding-right: 20px;
+color: var(--color-text);
 }
