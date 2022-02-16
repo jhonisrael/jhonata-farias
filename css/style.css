@@ -185,7 +185,7 @@ section {
 
 .contato{ 
 grid-area: rodape;
-background-color: var(--background-color2);
+/* background-color: var(--background-color2); */
 display: flex;
 justify-content: flex-end;
 align-items: center;
@@ -195,8 +195,8 @@ color: var(--color-text);
 }
 
 .img-service {
-    max-width: 800px;
-    max-height: 600px;
+    max-width: 900px;
+    max-height: 700px;
     width: auto;
     height: auto;
 }
