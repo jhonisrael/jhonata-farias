@@ -1,49 +1,42 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
+<html>
      <head>
 	 <meta charset="UTF-8">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
 	 <title>Jhonata Farias</title>
-	  <!-- Bootstrap -->
-	  <link href="css/bootstrap.min.css" rel="stylesheet">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 	 <link rel="stylesheet" href=./css/style.css>
 	 </head>
 <body>
-		 <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		 <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
-		 <script src="js/bootstrap.min.js"></script>
 	<input type="checkbox" id="darkmodeToggle">
     <main>
 		<div class="container">
-			<nav class="menu-principal">
-				<ul>
-					<li>
-						<a href="page.html">Inicio</a>
+			<nav  class="navbar navbar-expand-sm bg-dark navbar-dark">>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" href="page.html">Inicio</a>
 					</li>
-					<li>
-						<a href="#box2">Sobre</a>
+					<li class="nav-item">
+						<a class="nav-link active" href="#box2">Sobre</a>
 					</li>
-					<li>
-						<a href="#box3">Serviços</a>
+					<li class="nav-item">
+						<a class="nav-link active" href="#box3">Serviços</a>
 					</li>
-					<li>
-						<a href="#box4">Contato</a>
+					<li class="nav-item">
+						<a class="nav-link active" href="#box4">Contato</a>
 					</li>
-					<li>
-						<label for="darkmodeToggle" class="darkmodelabel">Dark Mode</label>
+					<li class="nav-item">
+						<label class="nav-link active" for="darkmodeToggle" class="darkmodelabel">Dark Mode</label>
 					</li>
 				</ul>
 			</nav>
-
-			<header>
+			<br>
+		   <header>
 			<img class="img_tamanho" src="./css/1614346924348.jpg" alt="Foto De Perfil" class="photo">
             </header>
 
-	<section id="box1" class="apresentacao">
+			<section id="box1" class="apresentacao">
 				<h1>Olá</h1>
 				<h1>Meu nome é Jhonata Farias</h1>
 				<h3>Sou <span class="destaque">Desenvolvedor Web</span> Back-End, Com Bons Conhecimentos Do Front-End.</h3>
@@ -51,9 +44,9 @@
 					<div><a href="https://github.com/jhonisrael"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
 						</div>
 				</h3>
-	</section>
+			</section>
 
-	<section>
+			<section>
 			<header> 
 			<h2 class="subtitle">Primeira Parada.</h2>
 			</header> 
@@ -68,12 +61,13 @@
 			   <hr size = 1 color= black width=100%>
 			   "E que aquilo que pode ser visto foi produzido a partir daquilo que não se vê."
 			</P>
-		    </article>
-	</section>
+			</article>
+			</section>
 			<hr size = 5 color= black width=100%>
 	   </div>
 
-	<section id="box2" class="sobre">
+	  <div class="container">
+	   <section id="box2" class="sobre">
 		<div class="left">
 			<H1>Sobre</H1>
 			<p>
@@ -83,9 +77,11 @@
 		<div class="right">
 			<img class="redonda" src="./css/robo2.jpg" alt="Foto pessoa">
 		</div>
-	</section>
+	  </section>
+      </div>
 
-	<section id="box3" class="servicos">
+	<div class="container">
+	   <section id="box3" class="servicos">
 		<div class="servico">
 			<h2>Clone da page login do instagram</h2>
 			<p>
@@ -101,22 +97,23 @@
 			</p>
 			<img class="img-service" src="./css/vagas-ti.png">
 		</div>
-	</section>
+	   </section>
+	</div>
+	<div class="container">
 	<footer>
-    <section id="box4" class="contato">
-				 <article class="rodap">
+		<section id="box4" class="contato">
             <h3>Entre em contato pelos canais:</h3>
-	    <ul class="contacts_list">
-		   <li>
-		       <a href="https://www.instagram.com/jhonatafarias_/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-		   </li>
-		   <li>
-		       <a href="https://www.linkedin.com/in/jhonata-farias-888163165/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-		   </li>
-        </ul>
-                 </article>
-	</section>
+	<ul class="contacts_list">
+		<li>
+		<a href="https://www.instagram.com/jhonatafarias_/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+		</li>
+		<li>
+		<a href="https://www.linkedin.com/in/jhonata-farias-888163165/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+		</li>
+    </ul>
+          </section>
 	</footer>
+     </div>
 	</main>
 </body>
 </html>
