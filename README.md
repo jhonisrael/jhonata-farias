@@ -1,2 +1,2 @@
 # Acesse o site através do link:
-[Site](#/page)
+[Clique Aqui](jhonisrael.github.io/jhonata-farias/page)
